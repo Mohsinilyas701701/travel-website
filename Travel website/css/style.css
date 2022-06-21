@@ -456,10 +456,184 @@ h1,h2,h3{
     margin: 0 auto;
     background-color: #e63946;
     text-transform: uppercase;
-    color: #fff;
+    color: #fff; 
     padding: 0.5em 3em;
     outline: none;
     border: none;
     cursor: pointer;
 
+}
+
+/* ######################## media queries############### */
+
+@media (max-width: 500px) {
+    html{
+        font-size: 50%;
+    }
+
+.nav-bar .nav-items, .nav-bar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.header-content .main-heading{
+    display: none;
+}
+
+.row{
+    height: auto;
+    width: 100%;
+}
+.row .img-box,
+.row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.features .box-2,
+.features .box-3{
+
+    margin-top: 5rem;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.411);
+}
+
+.box-wrapper{
+    box-shadow: none
+}
+
+.cta-banner-left,
+.cta-banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.container .count-items{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.about-wrapper .left,
+.about-wrapper .right{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.about-wrapper .right{
+    margin-top: 5rem;
+}
+.form-wrapper .company-adress,
+.form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+}
+
+@media (min-width: 501px) and (max-width: 768px){
+
+    html{
+        font-size: 50%;
+    }
+
+p{
+    font-size: 1.6rem;
+}
+
+.nav-bar .nav-items, .nav-bar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.row{
+    height: auto;
+    width: 100%;
+}
+.row .img-box,
+.row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.features .box-2,
+.features .box-3{
+
+    margin-top: 5rem;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.411);
+}
+
+.box-wrapper{
+    box-shadow: none
+}
+
+.cta-banner-left,
+.cta-banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.container .count-items{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.about-wrapper .left,
+.about-wrapper .right{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.about-wrapper .right{
+    margin-top: 5rem;
+}
+.form-wrapper .company-adress,
+.form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+    
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+
+    html{
+        font-size: 56.25%;
+    }
+    .row  .text-box h2{
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+}
+
+@media(orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
 }
